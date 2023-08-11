@@ -10,11 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- Flowbite installation -->
+    <!-- daisy ui cdn link -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
+      type="text/css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5e5ef3d834.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Car Mechanic Shop</title>
@@ -26,9 +33,221 @@
     </style>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="max-w-screen-xl mx-auto mt-12 px-4">
+      <nav
+        class="flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between items-center"
+      >
+        <div>
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+        <div>
+          <ul class="flex justify-center gap-7 lg:gap-12 items-center">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-row-reverse lg:flex-row gap-8 justify-between items-center"
+        >
+          <i class="fa-solid fa-bag-shopping text-[#444444] bg-white"></i>
+          <i class="fa-solid fa-magnifying-glass text-[#444444] bg-white"></i>
+          <button
+            class="btn border-[#FF3811] border-2 px-7 py-4 text-[#FF3811] font-bold rounded-lg bg-white"
+          >
+            Appointment
+          </button>
+        </div>
+      </nav>
+      <div>
+        <div
+          class="hero mt-12 rounded-lg"
+          style="background-image: url(./assets/images/banner/5.jpg)"
+        >
+          <div class="hero-overlay bg-opacity-50 rounded-lg"></div>
+          <div
+            class="lg:text-left pl-5 mr-auto mx-1 my-7 lg:mr-auto lg:mx-24 lg:my-28 text-white text-center"
+          >
+            <!-- Add pl-5 for left padding -->
+            <h1 class="mb-5 text-3xl lg:text-5xl font-bold text-white">
+              Affordable <br />
+              Price For Car <br />
+              Servicing
+            </h1>
+            <p class="mb-5 text-white max-w-[500px]">
+              There are many variations of passages of available, but the
+              majority have suffered alteration in some form
+            </p>
+            <div>
+              <button class="bg-[#FF3811] px-6 py-4 rounded-md mr-5">
+                Discover More
+              </button>
+              <button class="px-6 py-[14px] rounded-md border-2 border-white">
+                Latest Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-screen-xl mx-auto mt-12 px-4">
+      <!-- about us section -->
+      <section>
+        <div class="flex gap-12 lg:gap-32 flex-col-reverse lg:flex-row">
+          <div class="relative">
+            <div class="w-9/12 lg:w-full">
+              <img src="./assets/images/about_us/person.jpg" alt="" />
+            </div>
+            <div
+              class="w-6/12 lg:w-80 absolute -bottom-12 -right-4 lg:-right-16 lg:-bottom-12"
+            >
+              <img
+                class="border-8 border-white h-auto w-full"
+                src="./assets/images/about_us/parts.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="text-center lg:text-left">
+            <p class="text-[#FF3811] text-3xl font-bold">About Us</p>
+            <h2 class="text-[#151515] text-4xl font-bold my-6">
+              We are qualified & of experience in this field
+            </h2>
+            <p class="text-[#737373]">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+            <p class="text-[#737373] my-6">
+              the majority have suffered alteration in some form, by injected
+              humour, or randomised words which don't look even slightly
+              believable.
+            </p>
+            <button
+              class="bg-[#FF3811] px-6 py-4 rounded-md text-white font-medium"
+            >
+              Get More Info
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Our Service Area -->
+      <section class="mt-36">
+        <div class="text-center">
+          <p class="text-[#FF3811] text-2xl font-bold">Service</p>
+          <h2 class="text-[#151515] text-4xl font-bold my-5">
+            Our Service Area
+          </h2>
+          <p class="text-[#737373]">
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised <br />
+            words which don't look even slightly believable.
+          </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- first card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-md px-5 pt-5">
+            <figure class="rounded-2xl">
+              <img src="./assets/images/services/3.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#444] font-bold text-xl">
+                Auto Car Repair
+              </h2>
+              <div class="flex justify-center items-center text-[#FF3811]">
+                <p class="font-bold text-lg">Price : $20.00</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-md px-5 pt-5">
+            <figure class="rounded-2xl">
+              <img src="./assets/images/services/4.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#444] font-bold text-xl">
+                Electrical System
+              </h2>
+              <div class="flex justify-center items-center text-[#FF3811]">
+                <p class="font-bold text-lg">Price : $20.00</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-md px-5 pt-5">
+            <figure class="rounded-2xl">
+              <img src="./assets/images/services/5.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#444] font-bold text-xl">
+                Auto Car Repair
+              </h2>
+              <div class="flex justify-center items-center text-[#FF3811]">
+                <p class="font-bold text-lg">Price : $20.00</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-md px-5 pt-5">
+            <figure class="rounded-2xl">
+              <img src="./assets/images/services/6.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#444] font-bold text-xl">
+                Electrical System
+              </h2>
+              <div class="flex justify-center items-center text-[#FF3811]">
+                <p class="font-bold text-lg">Price : $20.00</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <!-- fifth card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-md px-5 pt-5">
+            <figure class="rounded-2xl">
+              <img src="./assets/images/services/1.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#444] font-bold text-xl">
+                Engine Diagnostics
+              </h2>
+              <div class="flex justify-center items-center text-[#FF3811]">
+                <p class="font-bold text-lg">Price : $20.00</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <!-- sixth card -->
+          <div class="card card-compact w-96 bg-base-100 shadow-md px-5 pt-5">
+            <figure class="rounded-2xl">
+              <img src="./assets/images/services/2.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#444] font-bold text-xl">
+                Electrical System
+              </h2>
+              <div class="flex justify-center items-center text-[#FF3811]">
+                <p class="font-bold text-lg">Price : $20.00</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 flex justify-center">
+          <button
+            class="btn border-[#FF3811] border-2 px-7 py-4 text-[#FF3811] font-bold rounded-lg bg-white"
+          >
+            More Services
+          </button>
+        </div>
+      </section>
+    </main>
     <footer></footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
   </body>
 </html>
